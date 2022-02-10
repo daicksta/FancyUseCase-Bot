@@ -1,52 +1,61 @@
 \chapter{Funktionsgliederung/-Struktur}
-	Um das Gerät strukturiert konstruieren zu können, werden die einzelnen Funktionen, welche der Arm erfüllen soll, gegliedert.
+	% Um das Gerät strukturiert konstruieren zu können, werden die einzelnen Funktionen, welche der Arm erfüllen soll, gegliedert.
+	Zur Zwecke der Reduktion des Komplexitätsgrades des Gesamtsystems wird sich für das Erstellen eines Funktionsbaumes entschieden.
+	Hier werden die in \cref{chap:Aufgabenstellung} formulierten Anforderungen in grober Form vorstrukturiert um sich einen Überblick über die Anzahl und Gestalt funktionaler Teilprobleme, sowie möglicher Lösungsansätze zu verschaffen.
+	Hieraus können in einer frühen Konzeptionsphase bereits unpraktikable Lösungsansätze verworfen und in der textlichen Ausformulierung gegebenenfalls verborgen gebliebene Teilprobleme identifiziert werden.
+	Im direkten Anschluss können Kernfunktionen und/oder Lösungsansätze im Rahmen morphologischer Kästen weiter diskutiert werden.
+	Wie feingliedrig dies geschehen soll, liegt im Ermessen der Konstrukteure.
 
 \section{Funktionsbaum}
 	Zunächst werden die allgemeinen Funktionen in Kategorien unterteilt, um eine Übersicht zu erschaffen. Diese sind in einem Funktionsbaum (s. \cref{fig:funktionsbaum}) zu sehen.
 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=\textwidth]{"Abb/Funktionsbaum"}
-		\caption[Funktionsbaum]{Funktionsbaum}
+		% \includesvg[height=.8\textheight]{Abb/chart}
+		\includesvg[width=\textwidth]{Abb/chart}
+		\caption[Funktionsbaum]{Funktionsbaum.}
 		\label{fig:funktionsbaum}
 	\end{figure}
 
 
 \section{Morphologische Kästen}
-	Im nächsten Schritt sind die erforderlichen Funktionen und mögliche Lösungen in morphologische Kästen (s. \crefrange{fig:morphologische-kasten-teilprobleme}{fig:morphologische-kasten-feedback-system}) aufgestellt. Die von uns gewählten Lösungen sind in grün markiert.\\
-	Die Begründungen zu den Lösungsauswahlen werden in \cref{Begründung Lösungsauswahl} näher erläutert.
+	% Im nächsten Schritt sind die erforderlichen Funktionen und mögliche Lösungen in morphologische Kästen (s. \crefrange{fig:morphologische-kasten-teilprobleme}{fig:morphologische-kasten-feedback-system}) aufgestellt. Die von uns gewählten Lösungen sind in grün markiert.\\
+	% Die Begründungen zu den Lösungsauswahlen werden in \cref{Begründung Lösungsauswahl} näher erläutert.
+	Zunächst wurden aus dem Funktionsbaum kritische Probleme abgeleitet und als Teilprobleme in einen morphologischen Kasten dargestellt. Da einige Bauteile viele Teilprobleme aufwiesen wurden diese in eigenen morphologischen Kästen behandelt. Im Anschluss wurde zu den entsprechenden Problemen Lösungen gesucht und diese dargestellt. Die Lösungen beruhen auf dem Wissen und der Erfahrung des Konstruktionsteams. Die Lösungen wurden danach im Hinblick auf verschiedene Kriterien überprüft und die passendste Lösung gewählt. Entscheidende Kriterien dabei waren die Komplexität, die Herstellbarkeit sowie die Kosten. 
+	Zunächst betrachten wir die Übergeordneten Teilprobleme. 
+	Dazu zählt unter anderem die Einstellbarkeit der Längen der Arme. Diese sollen möglichst genau die Anatomie unterschiedlicher Menschen abbilden. Um dies zu gewährleisten, müssen sie in der Länge verstellt werden können. Die passendste Lösung stellte dabei eine gewöhnliche Fahrradrohrklemme dar. Denn dazu muss nicht zusätzlicher Konstruktionsaufwand betrieben werden, sondern sie können zugekauft werden. Des Weiteren ist an dem Armbauteil wenig Bearbeitungsaufwand. Diese bestehen aus Rohren und können einfach eingeschlitzt werden, um die Klemmung der Fahrradklemmen zu übertragen auf das innen liegende Rohr. Die Auswahl für die Anpassungsmöglichkeit der Längen ist beim Oberarm und Unterarm identisch.
 
 	\begin{table}[h]
 		\centering
-		\caption[Morphologischer Kasten der Teilprobleme]{Morphologischer Kasten der Teilprobleme}
+		\caption[Morphologischer Kasten der Teilprobleme]{Morphologischer Kasten der Teilprobleme.}
 		\centering
 		\includegraphics[width=\textwidth]{"Abb/Morphologischer Kasten Teilprobleme"}
 		\label{fig:morphologische-kasten-teilprobleme}
 	\end{table}
 
 	\begin{table}[h]
-		\caption[Morphologischer Kasten der Schulter]{Morphologischer Kasten der Schulter}
+		\caption[Morphologischer Kasten der Schulter]{Morphologischer Kasten der Schulter.}
 		\centering
 		\includegraphics[width=\textwidth]{"Abb/Morphologischer Kasten Schulter"}
 		\label{fig:morphologische-kasten-schulter}
 	\end{table}
 
 	\begin{table}[h]
-		\caption[Morphologischer Kasten des Ellbogens]{Morphologischer Kasten des Ellbogens}
+		\caption[Morphologischer Kasten des Ellbogens]{Morphologischer Kasten des Ellbogens.}
 		\centering
 		\includegraphics[width=\textwidth]{"Abb/Morphologischer Kasten Ellbogen"}
 		\label{fig:morphologische-kasten-ellbogen}
 	\end{table}
 
 	\begin{table}[h]
-		\caption[Morphologischer Kasten des Handgelenks]{Morphologischer Kasten des Handgelenks}
+		\caption[Morphologischer Kasten des Handgelenks]{Morphologischer Kasten des Handgelenks.}
 		\centering
 		\includegraphics[width=\textwidth]{"Abb/Morphologischer Kasten Handgelenk"}
 		\label{fig:morphologische-kasten-handgelenk}
 	\end{table}
 
 	\begin{table}[h]
-		\caption[Morphologischer Kasten des Feedback-Systems]{Morphologischer Kasten des Feedback-Systems}
+		\caption[Morphologischer Kasten des Feedback-Systems]{Morphologischer Kasten des Feedback-Systems.}
 		\centering
 		\includegraphics[width=\textwidth]{"Abb/Morphologischer Kasten Feedback-System"}
 		\label{fig:morphologische-kasten-feedback-system}
@@ -59,20 +68,20 @@
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=\textwidth]{"Abb/Prinzipskizze Gesamtansicht"}
-		\caption[Prinzipskizze - Gesamtansicht]{Prinzipskizze - Gesamtansicht}
+		\caption[Prinzipskizze - Gesamtansicht]{Prinzipskizze - Gesamtansicht.}
 		\label{fig:prinzipskizze-gesamtansicht}
 	\end{figure}
 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=\textwidth]{"Abb/Prinzipskizze Ellbogen"}
-		\caption[Prinzipskizze - Ellbogen]{Prinzipskizze - Ellbogen}
+		\caption[Prinzipskizze - Ellbogen]{Prinzipskizze - Ellbogen.}
 		\label{fig:prinzipskizze-ellbogen}
 	\end{figure}
 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=\textwidth]{"Abb/Prinzipskizze Handgelenk und Hand"}
-		\caption[Prinzipskizze - Handgelenk und Hand]{Prinzipskizze - Handgelenk und Hand}
+		\caption[Prinzipskizze - Handgelenk und Hand]{Prinzipskizze - Handgelenk und Hand.}
 		\label{fig:prinzipskizze-handgelenk-und-hand}
 	\end{figure}
