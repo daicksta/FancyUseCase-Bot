@@ -28,4 +28,5 @@
 \contentsline {section}{\numberline {B.2}Einzelteilzeichnungen Schultergelenk}{42}{section.B.2}%
 \contentsline {section}{\numberline {B.3}Einzelteilzeichnungen Arme}{48}{section.B.3}%
 \contentsline {section}{\numberline {B.4}Einzelteilzeichnungen Ellbogengelenk}{58}{section.B.4}%
+\contentsline {section}{\numberline {B.5}Generelle Stückliste und Pneumatikschaltplan}{61}{section.B.5}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
