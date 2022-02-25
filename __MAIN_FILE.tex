@@ -1,4 +1,5 @@
 \documentclass[paper=a4,german,11pt,titlepage,twoside=true,headings=normal,numbers=noenddot,captions=tableabove,listof=totoc,index=totoc,bibliography=totoc]{scrreprt}
+\setuptoc{toc}{totoc}
 %-----------------------------------------------------------------
 \usepackage{etoolbox}
 \newbool{deutsch}
@@ -15,25 +16,35 @@
 \DeclareNameAlias{editor}{family-given}
 \DeclareNameAlias{translator}{family-given}
 \addbibresource{quellen.bib}
+%------DEBUGGING--------------------------------------------------
+% \usepackage[showframe]{geometry} % comment for live version
+% \usepackage{layout}
+% \usepackage{showframe}
+%-----------------------------------------------------------------
 \begin{document}
 %-----------------------------------------------------------------
 \input{chapters/0_top}
+\pagenumbering{Roman}
 \tableofcontents
 \newpage
+\input{chapters/glossary}
 %-----------------------------------------------------------------
 % \newcommand{\chaptercount}{5} % put number of chapters here
 % \foreach \c in {1,...,\chaptercount}{\input{chapters/\c_chap}}
-\include{chapters/1_chap}
-\include{chapters/2_chap}
-\include{chapters/3_chap}
-\include{chapters/4_chap}
-\include{chapters/5_chap}
-\include{chapters/6_chap}
+\clearpage\pagenumbering{arabic}
+\include{chapters/1_Einleitung}
+\include{chapters/2_Theorie}
+\include{chapters/3_Literatur}
+\include{chapters/4_Problemstellung}
+\include{chapters/5_Methodik}
+% \layout%
+\include{chapters/6_Ergebnisse}
+\include{chapters/7_Diskussion}
+\include{chapters/8_Zusammenfassung}
 %-----------------------------------------------------------------
 \newpage
-\listoffigures 
+\listoffigures
 \listoftables
-\input{chapters/glossary}
 \appendix
 \input{chapters/appendixA}
 \input{chapters/appendixB}

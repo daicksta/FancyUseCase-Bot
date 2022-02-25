@@ -1,0 +1,113 @@
+% In diesem Kapitel soll der Untersuchungsplan zur Bearbeitung der Problemstellung beschrieben werden. Dies beinhaltet Verfahrensweisen und Bearbeitungsschritte, die zur Zielerreichung führen: Was soll auf welchem Weg, wo, wann, in welchen Situationen durch wen ermittelt werden? Es sollte außerdem nachvollziehbar sein, warum bestimmte Methoden verwendet werden und andere nicht (z.B. Abwägung der Vor-/Nachteile in Bezug auf das Thema). Die Komplexität des Untersuchungsplans beeinflusst den Umfang der Arbeit. Bei der Durchführung einer experimentellen Studie, sollte die Grundgesamtheit der untersuchten Fälle oder Personen in allen relevanten Merkmalen so detailliert wie nötig beschrieben werden. Dies gilt in besonderem Maße für die verwendete Stichprobe (bzw. Teilmenge der Grundgesamtheit), weil sie über die Aussagefähigkeit der Untersuchung entscheidet. Ebenso sollte begründet werden, warum die gezogene Stichprobe angemessen
+% ist. Wissenschaftliche Kriterien:
+% • Die verwendeten Methoden sind unter Vorgabe einer möglichst hohen Qualität hinsichtlich Objektivität, Reliabilität und Validität auszuwählen.
+% • Die Durchführung der Untersuchung umfasst die methodisch-organisatorischen Details der Datenerhebung. Diese Beschreibung muss anderen Forschern ermöglichen, die Untersuchung zu wiederholen.
+% • Die Auswertungsverfahren sind nur dann ausführlicher darzustellen, falls sie nicht allgemein üblich und bekannt sind (z. B. Eigenentwicklung eines statistischen Verfahren).
+% • Forschungsethische Implikationen der Untersuchung müssen bedacht und eventuelle Aushandlungen durchgeführt werden: Wem nützt/schadet die Untersuchung? Welche Rechte haben untersuchte Personen/MitarbeiterInnen?
+\chapter{Methodik}
+	\section{Funktionsgliederung/-Struktur}
+		% Um das Gerät strukturiert konstruieren zu können, werden die einzelnen Funktionen, welche der Arm erfüllen soll, gegliedert.
+		Zum Zwecke der Reduktion des Komplexitätsgrades des Gesamtsystems wird sich für das Erstellen eines Funktionsbaumes entschieden.
+		Hier werden die in \cref{chap:Aufgabenstellung} formulierten Anforderungen in grober Form vorstrukturiert um sich einen Überblick über die Anzahl und Gestalt funktionaler Teilprobleme, sowie möglicher Lösungsansätze zu verschaffen.
+		Hieraus können in einer frühen Konzeptionsphase bereits unpraktikable Lösungsansätze verworfen und in der textlichen Ausformulierung gegebenenfalls verborgen gebliebene Teilprobleme identifiziert werden.
+		Im direkten Anschluss können Kernfunktionen und/oder Lösungsansätze im Rahmen morphologischer Kästen weiter diskutiert werden.	Wie feingliedrig dies geschehen soll, liegt im Ermessen der Konstrukteure.
+
+		\subsection{Funktionsbaum}
+			Zunächst werden die allgemeinen Funktionen in Kategorien unterteilt, um eine Übersicht zu erschaffen. Diese sind in einem Funktionsbaum (siehe \cref{fig:funktionsbaum}) zu sehen.
+			\begin{figure}[h]
+				\centering
+				\includesvg[height=.75\textheight]{Abb/chart}
+				% \includesvg[width=\textwidth]{Abb/chart}
+				\caption[Funktionsbaum]{Funktionsbaum.}
+				\label{fig:funktionsbaum}
+			\end{figure}
+
+		\subsection{Morphologische Kästen}
+			% Im nächsten Schritt sind die erforderlichen Funktionen und mögliche Lösungen in morphologische Kästen (s. \crefrange{fig:morphologische-kasten-teilprobleme}{fig:morphologische-kasten-feedback-system}) aufgestellt. Die von uns gewählten Lösungen sind in grün markiert.\\
+			% Die Begründungen zu den Lösungsauswahlen werden in \cref{Begründung Lösungsauswahl} näher erläutert.
+			Zunächst wurden aus dem Funktionsbaum kritische Probleme abgeleitet und als Teilprobleme in morphologischen Kästen (s. \crefrange{fig:morphologische-kasten-teilprobleme}{fig:morphologische-kasten-feedback-system}) dargestellt. Da einige Bauteile viele Teilprobleme aufwiesen, wurden diese in eigenen morphologischen Kästen behandelt. Im Anschluss wurde zu den entsprechenden Problemen Lösungen gesucht und diese dargestellt. Die Lösungen beruhen auf dem Wissen und der Erfahrung des Konstruktionsteams. Die Lösungen wurden danach im Hinblick auf verschiedene Kriterien überprüft und die passendste Lösung gewählt. Entscheidende Kriterien dabei waren die Komplexität, die Herstellbarkeit sowie die Kosten.
+
+			\begin{table}[h]
+				\centering
+				\caption[Morphologischer Kasten der Teilprobleme]{Morphologischer Kasten der Teilprobleme.}
+				\centering
+				\includegraphics[width=\textwidth]{Abb/Morphologischer_Kasten_Teilprobleme}
+				\label{fig:morphologische-kasten-teilprobleme}
+			\end{table}
+		%
+			\begin{table}[h]
+				\caption[Morphologischer Kasten der Schulter]{Morphologischer Kasten der Schulter.}
+				\centering
+				\includegraphics[width=\textwidth]{Abb/Morphologischer_Kasten_Schulter}
+				\label{fig:morphologische-kasten-schulter}
+			\end{table}
+		%
+			\begin{table}[h]
+				\caption[Morphologischer Kasten des Ellbogens]{Morphologischer Kasten des Ellbogens.}
+				\centering
+				\includegraphics[width=\textwidth]{Abb/Morphologischer_Kasten_Ellbogen}
+				\label{fig:morphologische-kasten-ellbogen}
+			\end{table}
+		%
+			\begin{table}[h]
+				\caption[Morphologischer Kasten des Handgelenks]{Morphologischer Kasten des Handgelenks.}
+				\centering
+				\includegraphics[width=\textwidth]{Abb/Morphologischer_Kasten_Handgelenk}
+				\label{fig:morphologische-kasten-handgelenk}
+			\end{table}
+		%
+			\begin{table}[h]
+				\caption[Morphologischer Kasten des Feedback-Systems]{Morphologischer Kasten des Feedback-Systems.}
+				\centering
+				\includegraphics[width=\textwidth]{Abb/Morphologischer_Kasten_Feedback-System}
+				\label{fig:morphologische-kasten-feedback-system}
+			\end{table}
+
+		\subsection{Prinzipskizze}
+			Da die Funktionen nun definiert sind, kann das Prinzip des Gerätes schematisch in einer Prinzipskizze aufgezeigt werden.
+			\Cref{fig:prinzipskizze-gesamtansicht} zeigt die Hauptbauteile, \cref{fig:prinzipskizze-ellbogen} den Anschluss zwischen Ober- und Unterarm und \cref{fig:prinzipskizze-handgelenk-und-hand} die Hand und ihre Verbindung zum Unterarm.
+
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=\textwidth]{Abb/Prinzipskizze_Gesamtansicht}
+				\caption[Prinzipskizze -- Gesamtansicht]{Prinzipskizze -- Gesamtansicht.}
+				\label{fig:prinzipskizze-gesamtansicht}
+			\end{figure}
+
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=\textwidth]{Abb/Prinzipskizze_Ellbogen}
+				\caption[Prinzipskizze -- Ellbogen]{Prinzipskizze -- Ellbogen.}
+				\label{fig:prinzipskizze-ellbogen}
+			\end{figure}
+
+			\begin{figure}[h]
+				\centering
+				\includegraphics[width=\textwidth]{Abb/Prinzipskizze_Handgelenk_und_Hand}
+				\caption[Prinzipskizze -- Handgelenk und Hand]{Prinzipskizze -- Handgelenk und Hand.}
+				\label{fig:prinzipskizze-handgelenk-und-hand}
+			\end{figure}
+
+	\section{Begründung der Lösungsauswahl}\label{Begründung Loesungsauswahl}
+
+		Nun soll erläutert und erklärt werden, wieso die jeweiligen Lösungen aus den morphologischen Kästen ausgewählt wurden.\par\medskip
+		
+		Zunächst betrachten wir die übergeordneten Teilprobleme. Dazu zählt unter anderem die Einstellbarkeit der Armlängen. Diese sollen möglichst genau die Anatomie unterschiedlicher Menschen nachbilden. Um dies zu gewährleisten, müssen sie in der Länge verstellt werden können. Die passendste Lösung stellte dabei eine gewöhnliche Fahrradrohrklemme dar. Denn dazu muss nicht zusätzlicher Konstruktionsaufwand betrieben werden, sondern sie können zugekauft werden. Des Weiteren ist an dem Bauteil des Arms wenig Bearbeitungsaufwand. Diese bestehen aus Rohren und können einfach eingeschlitzt werden, um die Verklemmung der Fahrradklemmen auf das innen liegende Rohr zu übertragen. Die Auswahl für die Anpassungsmöglichkeit der Längen ist beim Oberarm und Unterarm identisch.\par\medskip
+		
+		Der nächste wichtige Punkt stellt die Befestigung des Queues dar. Dabei muss die Bewegung des Arms auf den Queue übertragen werden. Allerdings darf er sich nicht drehen, da es zu einer ungewollten Bewegung der Kugel führen könnte. Um dies zu gewährleisten, wurde eine Rundklemme gewählt. Sie umschließt den Queue am Griff und ist auch käuflich zu erwerben. Des Weiteren ist sie, anders als die anderen Möglichkeiten, nicht destruktiv.\par\medskip
+		
+		Die Energieversorgung des gesamten Aufbaus erfolgt mittels elektrischer Energie. Diese ist am einfachsten in andere Energien umzuwandeln und eigentlich überall verfügbar.\par\medskip
+		
+		Die Bewegungsenergie bzw. die Energie, die für den Stoß verwendet wird, wird über Druckluft bereitgestellt. Dabei wird sie mit einem mobilen Kompressor erzeugt und in einem Pufferspeicher zwischengespeichert. Sobald der Stoß ausgeführt werden soll, kann die gespeicherte Druckluft kontrolliert abgelassen werden. Bei der Lösung mit nur einem Drucklufttank ist der Nachteil, dass nur so lange Stöße ausgeführt werden können, solange genug Druckluft vorhanden ist. Ist der Tank einmal leer, muss er über einen Druckluftkompressor, die in Billardhallen üblicherweise nicht vorhanden sind, aufgefüllt werden.\par\medskip
+		
+		Die Steuerungsenergie wird ebenfalls als elektrische Energie bereitgestellt, da damit die Möglichkeit der Ansteuerung von Motoren, sowie das Feedback von Sensoren ermöglicht wird. Eine Steuerung über Pneumatik wäre ebenfalls möglich, allerdings bietet sie nicht die oben genannten Vorteile (vgl. \cref{fig:morphologische-kasten-teilprobleme}).\par\medskip
+		
+		Wie weiter oben schon erwähnt, wurden einige Bereiche in eigenen morphologischen Kästen aufgearbeitet. Darunter die Schulter, der Ellbogen und das Handgelenk. Diese werden im Folgenden vorgestellt.\par\medskip
+		
+		Das erste Teilproblem der Schulter stellte die Befestigung dieser und damit der gesamten Baugruppe an dem bereitgestellten Dummy dar. Allerdings ist der einzige Kontaktpunkt des Dummys eine Schraube mit dem Gewinde M10 x 1. Diese Lösung ist also von den Gegebenheiten vorgegeben.\par\medskip
+		
+		Um einen typischen Billardstoß nachbilden zu können, muss sich außerdem die Schulter bewegen können, da der Arm eines Billardspielers meistens einen Winkel von 90° gegenüber der Senkrechten bildet. Da dieser Winkel jedoch von Spieler zu Spieler unterschiedlich ist, musste die Schulter beweglich ausgeführt werden. Um die Bewegung der Schulter umzusetzen, wurde ein spherical gear gewählt, da dies neben der eigentlichen Bewegung auch die Lagerung der Schulter als auch die Fixierung, während eines Stoßes sicherstellt, indem die Getriebeübersetzung entsprechend hoch gewählt wird. Da mit dieser Lösung mehrere Probleme auf einmal gelöst werden können und sie einen relativ kleinen Bauraum einnimmt, wurde diese Variante ausgewählt. Dabei wird allerdings die Bewegung der Schulter auf eine 2D-Ebene beschränkt, was aber für die Nachbildung eines Arms beim Billardspielen keinen Nachteil mit sich bringt (vgl. \cref{fig:morphologische-kasten-schulter}).\par\medskip
+		
+		Außerdem muss eine Bewegung am Ellbogen erzeugt werden, da damit die meisten Billardspieler ihren Stoß ausführen. Dabei gab es zwei Probleme zu lösen: Zum einen die Bewegung und zum anderen die Befestigung des Unterarms am Oberarm. Zur Bewegung des Unterarms wurden künstliche Muskeln gewählt. Sie sind flexibel und bilden die menschliche Anatomie sehr genau nach. Um die Bewegung des Arms zu ermöglichen, wurde ein gewöhnliches Scharnier gewählt, da auch dies den Konstruktionsaufwand gering hält und hinzugekauft werden kann (vgl. \cref{fig:morphologische-kasten-ellbogen}).\par\medskip
+		
+		Als letztes Problem wird das Handgelenk betrachtet. Dieses muss sich einerseits bewegen und andererseits am Unterarm befestigt werden. Da vom Handgelenk aber bei einer Lagerung des Queues keine eigene Bewegung erforderlich ist wurde die Hand so aufgelegt, dass sie nicht maschinell bewegt werden kann. Als Fixierung und Lagerung wurde am Handgelenk ein 3D-Kugelkopf gewählt, da damit eine genauere Positionierung des Queues möglich ist. So kann er auch in einem Winkel zum Arm ausgerichtet werden und bietet mehr Flexibilität bei der Nachstellung von Stößen (vgl. \cref{fig:morphologische-kasten-handgelenk}).
