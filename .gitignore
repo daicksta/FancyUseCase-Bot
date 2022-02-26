@@ -1,0 +1,29 @@
+deleted/Funktionsbaum.jpg
+deleted/Morphologischer Kasten Ellbogen.pdf
+deleted/Morphologischer Kasten Feedback-System.pdf
+deleted/Morphologischer Kasten Handgelenk.pdf
+deleted/Morphologischer Kasten Schulter.pdf
+deleted/Morphologischer Kasten Teilprobleme.pdf
+deleted/Prinzipskizze Ellbogen.pdf
+deleted/Prinzipskizze Gesamtansicht.pdf
+deleted/Prinzipskizze Handgelenk und Hand.pdf
+chapters/old/1_chap.tex
+chapters/old/2_chap.tex
+chapters/old/3_chap.tex
+chapters/old/4_chap.tex
+chapters/old/5_chap.tex
+chapters/old/6_chap.tex
+.vscode/ltex.dictionary.de-DE.txt
+*.fls
+*.synctex.gz
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.lof
+*.log
+*.lot
+*.run.xml
+*.toc
+__MAIN_FILE.pdf
