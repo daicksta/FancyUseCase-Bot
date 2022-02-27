@@ -113,12 +113,35 @@
 		Die Untersetzung \(N\) eines Zykloidalgetriebes lässt sich allgemein durch \cref{eq:untersetzung} darstellen.
 
 		\begin{equation}
-			N = -\frac{Z_2}{Z_1 - Z_2}
+			N = -\frac{Z_2}{Z_1 - Z_2}%
 			\label{eq:untersetzung}
 		\end{equation}
 
 		Hier seien \(Z_1\) die Anzahl der Zähne der inneren Scheibe und \(Z_2\) die Anzahl der Zähne des einschließenden, äußeren Ringes.
 		Aus der Geometrie geht zwingend hervor, dass \(Z_1 < Z_2\) gilt.
 		Weiter kann mit dem Zusammenhang \(Z_2 - Z_1 = 1\) das Verhältnis von Untersetzungsvermögen zu räumlichen Volumen maximiert werden.
-		Mit diesen Randbedingungen wird \cref{eq:untersetzung} zu \(N = Z_2\) und das Untersetzungsvermögen lässt sich somit unmittelbar an der Anzahl der Zähne des äußeren Ringes ablesen.\par\medskip
-		text \cref{drw:Uebersicht}
+		Mit diesen Randbedingungen wird \cref{eq:untersetzung} zu \(N = Z_2\) und das Untersetzungsvermögen lässt sich somit unmittelbar an der Anzahl der Zähne des äußeren Ringes ablesen.
+
+		\begin{figure}[h]
+			\centering
+			\includesvg[inkscapelatex=true, width=.6\textwidth]{Abb/schulterauslegung}
+			\caption[Vereinfachtes Modell des Systems Schulter-Oberarm-Unterarm]{Vereinfachtes Modell des Systems Schulter-Oberarm-Unterarm mit den Massen \(m_o, m_u\), den Längen \(l_o, l_u\) und dem verursachten Drehmoment \(M_m\).}%
+			\label{fig:modell schulter oberarm unterarm}
+		\end{figure}
+		
+		Nach \cite{Soll.1982} entfallen anteilig des Gesamtkörpergewichtes etwa \SI{3}{\percent} auf den Oberarm und \SI{2}{\percent} auf den Unterarm.
+		Mit einem angenommenen Gesamtkörpergewicht von \SI{80}{\kilo\gram} entspricht das einem Massenanteil von \SI{2,4}{\kilo\gram} auf den Oberarm und \SI{1,6}{\kilo\gram} auf den Unterarm.
+		Hier soll von einer homogenen Massenverteilung ausgegangen werden, womit die jeweiligen Massenschwerpunkte mittig auf der Verbindungslinie zwischen den Gelenken liegt.
+		Weiter wird von jeweiligen Längen für Ober- und Unterarm von \SI{0,35}{\metre} ausgegangen werde.\par
+		Soll beim Stoß der Oberarm horizontal und der Unterarm orthogonal nach unten gerichtet sein, so befindet sich das Gesamtgewicht des Systems mit \SI{4}{\kilo\gram} entlang der Oberarmachse nach \cref{eq:massenschwerpunkt arme} bei \SI{0,245}{\metre}.
+
+		\begin{align}
+			x_s &= \frac{x_o \cdot m_o + x_u \cdot m_u}{m_o + m_u} \nonumber \\
+				&= \frac{\SI{0,175}{\metre} \cdot \SI{2,4}{\kilo\gram} + \SI{0,35}{\metre} \cdot \SI{1,6}{\kilo\gram}}{\SI{4}{\kilo\gram}} \nonumber \\
+				&= \SI{0,245}{\metre}%
+				\label{eq:massenschwerpunkt arme}
+		\end{align}
+
+
+		% Handelsübliche Schrittmotoren besitzen eine Schrittweite bzw. Winkelauflösung von \SI{1,8}{\degree}.
+		% Wenn eine 
