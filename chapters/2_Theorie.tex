@@ -7,24 +7,23 @@
 		Zunächst allerdings wird der Impuls, den der Billiardqueue auf die Spielkugel überträgt betrachtet. 
 		Dabei gilt, dass die beiden Impulse bei unterschiedlicher Masse und Geschwindigkeiten identisch sind. 
 		\begin{equation}
-			m_{Arm} \cdot v_{Arm} = m_{Kugel} \cdot v_{Kugel}%
+			m\cdot v = m_{Kugel} \cdot v_{Kugel}%
 			\label{eq:ImpulsKugel}
 		\end{equation}
-		Dabei ist die Masse des Arms \(m_{Arm}\), die Bewegungsgeschwindigkeit des Arms \(v_{Arm}\), die Masse der Kugel \(m_{Kugel}\) und die Bewegungsgeschwindigkeit der Kugel \(v_{Kugel}\).
+		Dabei ist die Masse des Arms \(m\), die Bewegungsgeschwindigkeit des Arms \(v\), die Masse der Kugel \(m_{Kugel}\) und die Bewegungsgeschwindigkeit der Kugel \(v_{Kugel}\).
 		Damit kann die benötigte Bewegungsgeschwindigkeit an der Hand des Armes berechnet werden.
 		\begin{equation}
-			v_{Arm} = \frac{m_{Kugel} \cdot v_{Kugel}}{m_{Arm}}%
+			v = \frac{m_{Kugel} \cdot v_{Kugel}}{m}%
 			\label{eq:SollgeschwindikeitArm}
 		\end{equation}
 
-		Die kann dann dazu genutzt werden die erforderliche Kraft der pneumatischen Muskeln zu berechnen.
-		Sie ist im folgenden mit \(v\) für die Sollgeschwindigkeit bezeichnet. \par
+		Die kann dann dazu genutzt werden die erforderliche Kraft der pneumatischen Muskeln zu berechnen. \par
 		Nun wird über das Drehmoment die benötigte Kraft der künstlichen Muskeln oder auch PAMs berechnet. 
 
 
 
 		\begin{equation}
-			M = b \cdot F = I \cdot \alpha%
+			M = b \cdot F_x = I \cdot \alpha%
 			\label{eq:DrehmomentArm}
 		\end{equation}
 
