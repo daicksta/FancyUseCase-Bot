@@ -23,7 +23,7 @@
 			\end{figure}
 
 		\subsection{Morphologische Kästen}
-			% Im nächsten Schritt sind die erforderlichen Funktionen und mögliche Lösungen in morphologische Kästen (s. \crefrange{fig:morphologische-kasten-teilprobleme}{fig:morphologische-kasten-feedback-system}) aufgestellt. Die von uns gewählten Lösungen sind in grün markiert.\\
+			% Im nächsten Schritt sind die erforderlichen Funktionen und mögliche Lösungen in morphologische Kästen (s. \crefrange{tab:morphologische-kasten-teilprobleme}{tab:morphologische-kasten-feedback-system}) aufgestellt. Die von uns gewählten Lösungen sind in grün markiert.\\
 			% Die Begründungen zu den Lösungsauswahlen werden in \cref{Begründung Lösungsauswahl} näher erläutert.
 			In diesem Unterkapitel wird zur Darstellung von Lösungsmöglichkeiten für Teilprobleme die Methode der morphologischen Kästen gewählt. Diese Methode bringt die Vorteile mit sich, alle Teilprobleme auf einem Blick vor sich liegen zu haben, deren Lösungsoptionen in kompakter Darstellungsweise präsentieren zu können und eine Übersicht anhand Markierung der gewählten Lösungen, welche später teilweise miteinander verknüpft sind und aufeinander beruhen, bieten zu können.\par\medskip
 			Zunächst werden aus dem Funktionsbaum kritische Probleme abgeleitet und als Teilprobleme in morphologischen Kästen (s. \crefrange{tab:morphologische-kasten-teilprobleme}{tab:morphologische-kasten-feedback-system}) dargestellt. Da einige Bauteile viele Teilprobleme aufweisen, werden diese in eigenen morphologischen Kästen behandelt.\par
@@ -95,32 +95,32 @@
 
 		Die Bewegungsenergie bzw. die Energie, die für den Stoß verwendet wird, wird über Druckluft bereitgestellt. Dabei wird sie mit einem mobilen Kompressor erzeugt und in einem Pufferspeicher zwischengespeichert. Sobald der Stoß ausgeführt werden soll, kann die gespeicherte Druckluft kontrolliert abgelassen werden. Bei der Lösung mit nur einem Drucklufttank ist der Nachteil, dass nur so lange Stöße ausgeführt werden können, solange genug Druckluft vorhanden ist. Ist der Tank einmal leer, muss er über einen Druckluftkompressor, die in Billardhallen üblicherweise nicht vorhanden sind, aufgefüllt werden.\par\medskip
 		
-		Die Steuerungsenergie wird ebenfalls als elektrische Energie bereitgestellt, da damit die Möglichkeit der Ansteuerung von Motoren, sowie das Feedback von Sensoren ermöglicht wird. Eine Steuerung über Pneumatik wäre ebenfalls möglich, allerdings bietet sie nicht die oben genannten Vorteile (vgl. \cref{fig:morphologische-kasten-teilprobleme}).\par\medskip
+		Die Steuerungsenergie wird ebenfalls als elektrische Energie bereitgestellt, da damit die Möglichkeit der Ansteuerung von Motoren, sowie das Feedback von Sensoren ermöglicht wird. Eine Steuerung über Pneumatik wäre ebenfalls möglich, allerdings bietet sie nicht die oben genannten Vorteile (vgl. \cref{tab:morphologische-kasten-teilprobleme}).\par\medskip
 		
 		Wie weiter oben schon erwähnt, wurden einige Bereiche in eigenen morphologischen Kästen aufgearbeitet. Darunter die Schulter, der Ellbogen und das Handgelenk. Diese werden im Folgenden vorgestellt.\par\medskip
 
 		Das erste Teilproblem der Schulter stellte die Befestigung dieser und damit der gesamten Baugruppe an dem bereitgestellten Dummy dar. Allerdings ist der einzige Kontaktpunkt des Dummys eine Schraube mit dem Gewinde M10 x 1. Diese Lösung ist also von den Gegebenheiten vorgegeben.\par\medskip
 
-		Um einen typischen Billardstoß nachbilden zu können, muss sich außerdem die Schulter bewegen können, da der Arm eines Billardspielers meistens einen Winkel von 90° gegenüber der Senkrechten bildet. Da dieser Winkel jedoch von Spieler zu Spieler unterschiedlich ist, musste die Schulter beweglich ausgeführt werden. Um die Bewegung der Schulter umzusetzen, wurde ein spherical gear gewählt, da dies neben der eigentlichen Bewegung auch die Lagerung der Schulter als auch die Fixierung, während eines Stoßes sicherstellt, indem die Getriebeübersetzung entsprechend hoch gewählt wird. Da mit dieser Lösung mehrere Probleme auf einmal gelöst werden können und sie einen relativ kleinen Bauraum einnimmt, wurde diese Variante ausgewählt. Dabei wird allerdings die Bewegung der Schulter auf eine 2D-Ebene beschränkt, was aber für die Nachbildung eines Arms beim Billardspielen keinen Nachteil mit sich bringt (vgl. \cref{fig:morphologische-kasten-schulter}).\par\medskip
+		Um einen typischen Billardstoß nachbilden zu können, muss sich außerdem die Schulter bewegen können, da der Arm eines Billardspielers meistens einen Winkel von \SI{90}{\degree} gegenüber der Senkrechten bildet. Da dieser Winkel jedoch von Spieler zu Spieler unterschiedlich ist, musste die Schulter beweglich ausgeführt werden. Um die Bewegung der Schulter umzusetzen, wurde ein spherical gear gewählt, da dies neben der eigentlichen Bewegung auch die Lagerung der Schulter als auch die Fixierung, während eines Stoßes sicherstellt, indem die Getriebeübersetzung entsprechend hoch gewählt wird. Da mit dieser Lösung mehrere Probleme auf einmal gelöst werden können und sie einen relativ kleinen Bauraum einnimmt, wurde diese Variante ausgewählt. Dabei wird allerdings die Bewegung der Schulter auf eine 2D-Ebene beschränkt, was aber für die Nachbildung eines Arms beim Billardspielen keinen Nachteil mit sich bringt (vgl. \cref{tab:morphologische-kasten-schulter}).\par\medskip
 
-		Außerdem muss eine Bewegung am Ellbogen erzeugt werden, da damit die meisten Billardspieler ihren Stoß ausführen. Dabei gab es zwei Probleme zu lösen: Zum einen die Bewegung und zum anderen die Befestigung des Unterarms am Oberarm. Zur Bewegung des Unterarms wurden künstliche Muskeln gewählt. Sie sind flexibel und bilden die menschliche Anatomie sehr genau nach. Um die Bewegung des Arms zu ermöglichen, wurde ein gewöhnliches Scharnier gewählt, da auch dies den Konstruktionsaufwand gering hält und hinzugekauft werden kann (vgl. \cref{fig:morphologische-kasten-ellbogen}).\par\medskip
+		Außerdem muss eine Bewegung am Ellbogen erzeugt werden, da damit die meisten Billardspieler ihren Stoß ausführen. Dabei gab es zwei Probleme zu lösen: Zum einen die Bewegung und zum anderen die Befestigung des Unterarms am Oberarm. Zur Bewegung des Unterarms wurden künstliche Muskeln gewählt. Sie sind flexibel und bilden die menschliche Anatomie sehr genau nach. Um die Bewegung des Arms zu ermöglichen, wurde ein gewöhnliches Scharnier gewählt, da auch dies den Konstruktionsaufwand gering hält und hinzugekauft werden kann (vgl. \cref{tab:morphologische-kasten-ellbogen}).\par\medskip
 
-		Als letztes Problem wird das Handgelenk betrachtet. Dieses muss sich einerseits bewegen und andererseits am Unterarm befestigt werden. Da vom Handgelenk aber bei einer Lagerung des Queues keine eigene Bewegung erforderlich ist wurde die Hand so aufgelegt, dass sie nicht maschinell bewegt werden kann. Als Fixierung und Lagerung wurde am Handgelenk ein 3D-Kugelkopf gewählt, da damit eine genauere Positionierung des Queues möglich ist. So kann er auch in einem Winkel zum Arm ausgerichtet werden und bietet mehr Flexibilität bei der Nachstellung von Stößen (vgl. \cref{fig:morphologische-kasten-handgelenk}).
-	\section{Auslegung}\label{sec:auslegung}
-		Um den Queue korrekt anlegen zu können ist es erforderlich, dass sämtliche Unterbaugruppen vor, während und nach eines Stoßes in der eingestellten Ausrichtung verharren.
-		Weiter muss die angestrebte Position an der Kugel, sowie der Stoßwinkel in ausreichender Präzision sicher angefahren werden können.
-		Diese Aufgabe muss primär vom Schultergelenk geleistet werden, welches wie oben beschrieben mit einem Zykloidalgetriebe als Kernkomponente umgesetzt werden soll.
-		Die Untersetzung \(N\) eines Zykloidalgetriebes lässt sich allgemein durch \cref{eq:untersetzung} darstellen.
+		Als letztes Problem wird das Handgelenk betrachtet. Dieses muss sich einerseits bewegen und andererseits am Unterarm befestigt werden. Da vom Handgelenk aber bei einer Lagerung des Queues keine eigene Bewegung erforderlich ist wurde die Hand so aufgelegt, dass sie nicht maschinell bewegt werden kann. Als Fixierung und Lagerung wurde am Handgelenk ein 3D-Kugelkopf gewählt, da damit eine genauere Positionierung des Queues möglich ist. So kann er auch in einem Winkel zum Arm ausgerichtet werden und bietet mehr Flexibilität bei der Nachstellung von Stößen (vgl. \cref{tab:morphologische-kasten-handgelenk}).
+	\section{Auslegung der Schulter}\label{sec:auslegung}
+		% Um den Queue korrekt anlegen zu können ist es erforderlich, dass sämtliche Unterbaugruppen vor, während und nach eines Stoßes in der eingestellten Ausrichtung verharren.
+		% Weiter muss die angestrebte Position an der Kugel, sowie der Stoßwinkel in ausreichender Präzision sicher angefahren werden können.
+		% Diese Aufgabe muss primär vom Schultergelenk geleistet werden, welches wie oben beschrieben mit einem Zykloidalgetriebe als Kernkomponente umgesetzt werden soll.
+		% Die Untersetzung \(N\) eines Zykloidalgetriebes lässt sich allgemein durch \cref{eq:untersetzung} darstellen.
 
-		\begin{equation}
-			N = -\frac{Z_2}{Z_1 - Z_2}%
-			\label{eq:untersetzung}
-		\end{equation}
+		% \begin{equation}
+		% 	N = -\frac{Z_2}{Z_1 - Z_2}%
+		% 	\label{eq:untersetzung}
+		% \end{equation}
 
-		Hier seien \(Z_1\) die Anzahl der Zähne der inneren Scheibe und \(Z_2\) die Anzahl der Zähne des einschließenden, äußeren Ringes.
-		Aus der Geometrie geht zwingend hervor, dass \(Z_1 < Z_2\) gilt.
-		Weiter kann mit dem Zusammenhang \(Z_2 - Z_1 = 1\) das Verhältnis von Untersetzungsvermögen zu räumlichen Volumen maximiert werden.
-		Mit diesen Randbedingungen wird \cref{eq:untersetzung} zu \(N = Z_2\) und das Untersetzungsvermögen lässt sich somit unmittelbar an der Anzahl der Zähne des äußeren Ringes ablesen.
+		% Hier seien \(Z_1\) die Anzahl der Zähne der inneren Scheibe und \(Z_2\) die Anzahl der Zähne des einschließenden, äußeren Ringes.
+		% Aus der Geometrie geht zwingend hervor, dass \(Z_1 < Z_2\) gilt.
+		% Weiter kann mit dem Zusammenhang \(Z_2 - Z_1 = 1\) das Verhältnis von Untersetzungsvermögen zu räumlichen Volumen maximiert werden.
+		% Mit diesen Randbedingungen wird \cref{eq:untersetzung} zu \(N = Z_2\) und das Untersetzungsvermögen lässt sich somit unmittelbar an der Anzahl der Zähne des äußeren Ringes ablesen.
 
 		\begin{figure}[h]
 			\centering
@@ -145,29 +145,29 @@
 
 		% Handelsübliche Schrittmotoren besitzen eine Schrittweite bzw. Winkelauflösung von \SI{1,8}{\degree}.
 		% Wenn eine 
-	In diesem Abschnitt werden die benötigte Kraft der Muskeln sowie die Form des Getriebes berechnet und beschrieben.
-	\subsection{Auslegung der künstlichen Muskeln}
-	Es erfolgt die Berechnung der benötigten Kraft, die der Bizeps aufbringen muss, um die Kugel mit der entsprechenden Geschwindigkeit stoßen zu können. 
-	Dazu wurde in eigener Recherche ermittelt, dass die maximalen Geschwindigkeiten (\(v_{Kugel}\)) einer Billiradkugel bei ungefähr 40 km/h, also 11,1 m/s, liegt. 
-	Die Gewichte der Kugeln wurde aus der Aufgabenstellung entnommen, dabei wurde die größte Masse angenommen, um alle Arten an Kugeln mindestens mit einer Geschwindigkeit von 11,1 m/s bewegen zu können.
-	Diese Masse beträgt \(m_{Kugel}\) = 204 g.
-	Die Masse des Arms (\(m_{Arm}\)) wurde mithilfe des CAD-Programms Solidworks ermittelt. Sie liegt bei 1,1 kg.
-	Wichtig dabei ist, dass es sich lediglich um die Masse handelt, die bei einem Stoß bewegt wird. 
-	Mit diesen Angaben lässt sich nun nach \cref*{eq:SollgeschwindikeitArm} die Geschwindigkeit, mit der der Arm bewegt werden muss ermitteln. 
+	% In diesem Abschnitt werden die benötigte Kraft der Muskeln sowie die Form des Getriebes berechnet und beschrieben.
+	\section{Auslegung der künstlichen Muskeln}
+		Es erfolgt die Berechnung der benötigten Kraft, die der Bizeps aufbringen muss, um die Kugel mit der entsprechenden Geschwindigkeit stoßen zu können. 
+		Dazu wurde in eigener Recherche ermittelt, dass die maximalen Geschwindigkeiten \(v_{Kugel}\) einer Billiradkugel bei ungefähr \SI{40}{\kilo\metre\per\hour}, also \SI{11,1}{\metre\per\second}, liegt. 
+		Die Gewichte der Kugeln wurde aus der Aufgabenstellung entnommen, dabei wurde die größte Masse angenommen, um alle Arten an Kugeln mindestens mit einer Geschwindigkeit von \SI{11,1}{\metre\per\second} bewegen zu können.
+		Diese Masse beträgt \(m_{Kugel}\) = \SI{204}{\gram}.
+		Die Masse des Arms \(m_{Arm}\) wurde mithilfe des CAD-Programms \textsc{Solidworks} ermittelt. Sie liegt bei \SI{1,1}{\kilo\gram}.
+		Wichtig dabei ist, dass es sich lediglich um die Masse handelt, die bei einem Stoß bewegt wird. 
+		Mit diesen Angaben lässt sich nun nach \cref*{eq:SollgeschwindikeitArm} die Geschwindigkeit, mit der der Arm bewegt werden muss ermitteln. 
 
-	\begin{equation}
-		v_{Arm} = \frac{\SI{0,204}{\kilogram} \cdot \SI{11,1}{\metre\per\second}}{\SI{1,105}{\kilogram}} = \SI{2,05}{\metre\per\second}
-		\label{eq:SollgeschwindikeitArmZahlen}
-	\end{equation}
-	Die Massen, Massenschwerpunkte und die Längen, die für die Berechnung der Kraft benötigt wurden, werden ebenfalls mithilfe von SolidWorks ermittelt. 
-	Zur Ermittlung der Kraft wird die \cref*{eq:Kraft-PAM} verwendet. 
+		\begin{equation}
+			v_{Arm} = \frac{\SI{0,204}{\kilogram} \cdot \SI{11,1}{\metre\per\second}}{\SI{1,105}{\kilogram}} = \SI{2,05}{\metre\per\second}
+			\label{eq:SollgeschwindikeitArmZahlen}
+		\end{equation}
+		Die Massen, Massenschwerpunkte und die Längen, die für die Berechnung der Kraft benötigt wurden, werden ebenfalls mithilfe von SolidWorks ermittelt. 
+		Zur Ermittlung der Kraft wird die \cref{eq:Kraft-PAM} verwendet. 
 
-	\begin{equation}
-		F =\frac{\SI{1,105}{\kilogram} \cdot \SI{17867,67}{\milli\metre\squared} \cdot \SI{420}{\metre\per\second\squared}}{\SI{304,29}{\milli\metre} \cdot \SI{136,35}{\milli\metre} \cdot cos(\SI{46,38}{\degree})} = \SI{289,72}{\newton}
-	\end{equation}	
-	mit \(a_T\)
-	\begin{equation}
-		a_T = \frac{\SI{4,2}{\metre\squared\per\second\squared}}{\SI{10}{\milli\metre}} = \SI{420}{\metre\per\second\squared}
-	\end{equation}
-	
-	So ergibt sich eine minimal benötige Kraft der künstlichen Muskeln von 289,72 N. 
+		\begin{equation}
+			F =\frac{\SI{1,105}{\kilogram} \cdot \SI{17867,67}{\milli\metre\squared} \cdot \SI{420}{\metre\per\second\squared}}{\SI{304,29}{\milli\metre} \cdot \SI{136,35}{\milli\metre} \cdot cos(\SI{46,38}{\degree})} = \SI{289,72}{\newton}
+		\end{equation}
+		mit \(a_T\)
+		\begin{equation}
+			a_T = \frac{\SI{4,2}{\metre\squared\per\second\squared}}{\SI{10}{\milli\metre}} = \SI{420}{\metre\per\second\squared}
+		\end{equation}
+		
+		So ergibt sich eine minimal benötige Kraft der künstlichen Muskeln von \SI{289,72}{\newton}.
