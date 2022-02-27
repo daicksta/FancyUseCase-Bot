@@ -29,3 +29,5 @@ chapters/old/6_chap.tex
 *.toc
 __MAIN_FILE.pdf
 Calculus/epi.svg
+*.pdf_tex
+*.pdf
