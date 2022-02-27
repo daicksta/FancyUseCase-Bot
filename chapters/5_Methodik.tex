@@ -145,3 +145,29 @@
 
 		% Handelsübliche Schrittmotoren besitzen eine Schrittweite bzw. Winkelauflösung von \SI{1,8}{\degree}.
 		% Wenn eine 
+	In diesem Abschnitt werden die benötigte Kraft der Muskeln sowie die Form des Getriebes berechnet und beschrieben.
+	\subsection{Auslegung der künstlichen Muskeln}
+	Es erfolgt die Berechnung der benötigten Kraft, die der Bizeps aufbringen muss, um die Kugel mit der entsprechenden Geschwindigkeit stoßen zu können. 
+	Dazu wurde in eigener Recherche ermittelt, dass die maximalen Geschwindigkeiten (\(v_{Kugel}\)) einer Billiradkugel bei ungefähr 40 km/h, also 11,1 m/s, liegt. 
+	Die Gewichte der Kugeln wurde aus der Aufgabenstellung entnommen, dabei wurde die größte Masse angenommen, um alle Arten an Kugeln mindestens mit einer Geschwindigkeit von 11,1 m/s bewegen zu können.
+	Diese Masse beträgt \(m_{Kugel}\) = 204 g.
+	Die Masse des Arms (\(m_{Arm}\)) wurde mithilfe des CAD-Programms Solidworks ermittelt. Sie liegt bei 1,1 kg.
+	Wichtig dabei ist, dass es sich lediglich um die Masse handelt, die bei einem Stoß bewegt wird. 
+	Mit diesen Angaben lässt sich nun nach \cref*{eq:SollgeschwindikeitArm} die Geschwindigkeit, mit der der Arm bewegt werden muss ermitteln. 
+
+	\begin{equation}
+		v_{Arm} = \frac{\SI{0,204}{\kilogram} \cdot \SI{11,1}{\metre\per\second}}{\SI{1,105}{\kilogram}} = \SI{2,05}{\metre\per\second}
+		\label{eq:SollgeschwindikeitArmZahlen}
+	\end{equation}
+	Die Massen, Massenschwerpunkte und die Längen, die für die Berechnung der Kraft benötigt wurden, werden ebenfalls mithilfe von SolidWorks ermittelt. 
+	Zur Ermittlung der Kraft wird die \cref*{eq:Kraft-PAM} verwendet. 
+
+	\begin{equation}
+		F =\frac{\SI{1,105}{\kilogram} \cdot \SI{17867,67}{\milli\metre\squared} \cdot \SI{420}{\metre\per\second\squared}}{\SI{304,29}{\milli\metre} \cdot \SI{136,35}{\milli\metre} \cdot cos(\SI{46,38}{\degree})} = \SI{289,72}{\newton}
+	\end{equation}	
+	mit \(a_T\)
+	\begin{equation}
+		a_T = \frac{\SI{4,2}{\metre\squared\per\second\squared}}{\SI{10}{\milli\metre}} = \SI{420}{\metre\per\second\squared}
+	\end{equation}
+	
+	So ergibt sich eine minimal benötige Kraft der künstlichen Muskeln von 289,72 N. 
