@@ -1,20 +1,23 @@
 % Dieses Kapitel bildet zusammen mit dem folgenden Kapitel Diskussion den Hauptteil der Arbeit. In übersichtlicher Gliederung und sinnvoller Reihenfolge wird dargestellt, was mittels der eingesetzten Methodik im Hinblick auf die Zielsetzung herausgefunden werden konnte. Die Strukturierung des Kapitels orientiert sich an der Theorie und Methodik. Mit Hilfe von Grafiken und Diagrammen (siehe 2.8.4) werden die Ergebnisse wertfrei dargestellt. Eine Interpretation erfolgt an dieser Stelle noch nicht.
 \chapter{Ergebnisse}
-	Das auf Basis der vorangegangenen Überlegungen entwickelte Gerät soll in den folgenden Kapiteln anhand technischer Zeichnungen näher erläutert werden.
+	Das auf Basis der vorangegangenen Überlegungen entwickelte Gerät soll im folgenden anhand gerenderter Darstellungen näher erläutert werden.
 	Eine vollständige technische Dokumentation ist in \cref{sec:zeichnungen} zu finden.
-	\section{Konzeption und Entwurf}
-		Nun werden die zur Konstruktion konzipierten Bauteile allesamt mit Zeichnungen präsentiert und kommentiert.
-		Dabei wird unter anderem sowohl auf das Prozedere der Konstruktion als auch auf die aufgetauchten Probleme und die Vorgehensweise zur Lösung jener eingegangen.\par
-		Die technischen Zeichnungen zu den Bauteilen sind jeweils in \cref{sec:zeichnungen} angehängt.
-		Die Übersichtszeichnungen sind meist explosionsartige Darstellungsformen und enthalten Nummerierungen, die dann jeweils in der darauffolgenden Stückliste manifestiert sind.
+	Dabei wird unter anderem sowohl auf das Prozedere der Konstruktion als auch nochmals in Kürze auf die Probleme und die Vorgehensweise zur Lösung jener eingegangen.
+	Die Übersichtszeichnungen sind meist explosionsartige Darstellungsformen und enthalten Nummerierungen, die in der jeweils darauffolgenden Stückliste festgehalten sind.
 		
-	\section{Gesamtbauteil}
+	\section{Gesamtkonstruktion}
 		Wie vorhin bereits erwähnt, sind die Zeichnungen des Gesamtbauteils im \cref{sec:bauteilzeichnungen} angehängt.
 		Diese zeigen das fertige Konstrukt als Ganzes und als Bauteilexplosionszeichnung.
-		Die Maße und Dimensionierungen der Einzelteile sind den Zeichnungen der jeweils zugehörigen Unterkapiteln zu entnehmen.\\
+		Die Maße und Dimensionierungen der Einzelteile sind den Zeichnungen der jeweils zugehörigen Unterkapiteln zu entnehmen.
 		Allgemein ist zu sagen, dass die Bauteile so konstruiert werden mussten, dass sie einander angepasst sind.
 		Dabei spielen die Verbindungen zwischen den einzelnen Gliedern eine entscheidende Rolle.
 		Das Gesamtbauteil besteht aus Schulter, Oberarm, Muskeln (Bizeps/Trizeps), Ellbogen, Unterarm und Hand.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=\textwidth]{Abb/CAD/Renderings/master_render.jpg}
+			\caption[Gerenderte Gesamtdarstellung des entwickelten Gerätes]{Gerenderte Gesamtdarstellung des entwickelten Gerätes.}%
+			\label{fig:rendering total}
+		\end{figure}
 	
 	\section{Schulter}
 		Die Schulter hat die Aufgabe sowohl den gesamten Arm am Dummy zu befestigen als auch die Bewegung des Arms zu initialisieren.
@@ -23,6 +26,12 @@
 		Diese Konstruktion bietet den Vorteil, dass durch eine von außen einwirkende Kraft auf den Arm, zum Beispiel beim Stoßen der Kugel, der Arm nicht am Schultergelenk bewegt wird.
 		Außerdem lassen sich dadurch schnelle Bewegungen des Motors in kleine definierte Winkeländerungen des Oberarms übersetzen.
 		Ein weiterer Vorteil besteht darin, dass sich die Achse der Motorwelle und die Achse des Ausgangs auf einer gemeinsamen Rotationsachse befinden.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=\textwidth]{Abb/CAD/Renderings/Effektor.jpg}
+			\caption[Gerenderte Darstellung des Schultergelenkes]{Gerenderte Darstellung des Schultergelenkes mit dem Motor im Vordergrund.}%
+			\label{fig:rendering effektor}
+		\end{figure}
 
 	
 	\section{Ellbogen}
@@ -30,6 +39,12 @@
 		Das Ellbogengelenk ist mit gekauften und gedruckten Teilen erstellt.
 		Dabei werden alle Teile, die käuflich erworben werden können, auch zugekauft.
 		Dies spart kosten bei der Konstruktion und hält den Konstruktionsaufwand geringer.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=\textwidth]{Abb/CAD/Renderings/ellbogen.jpg}
+			\caption[Gerenderte Darstellung des Ellbogengelenks]{Gerenderte Darstellung des Ellbogengelenks.}%
+			\label{fig:rendering ellbogen}
+		\end{figure}
 	
 	\section{Ober-/Unterarm}
 		Die Konstruktion des Ober- und Unterarms wurde zunächst an den Prinzipskizzen orientiert erstellt.
@@ -42,21 +57,49 @@
 		Dabei liegt auch der Vorteil, dass nicht alle Bauteile eigenständig konstruiert werden müssen.
 		So lassen sich zum Beispiel die Klemmen, die die Rohrteile miteinander verbinden, als gewöhnliche Fahrradklemmen ausführen.
 		Auch die Anschlüsse der künstlichen Muskeln können als 3D-gedruckte Teile ausgearbeitet werden und mit einer einfachen Rohrschelle an die Arme befestigt werden.
-		Spezielle Teile wie die Einsätze der Rohre wurden eigenständig konstruiert.\\
+		Spezielle Teile wie die Einsätze der Rohre wurden eigenständig konstruiert.
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=\textwidth]{Abb/CAD/Renderings/oberarm-unterarm.jpg}
+			\caption[Gerenderte Darstellung des Ober- und Unterarms]{Gerenderte Darstellung des Ober- und Unterarms. Hier nicht zu sehen die Hand, Bizeps, Trizeps und Schulter.}%
+			\label{fig:rendering oberarm unterarm}
+		\end{figure}
 
 	\section{Hand}
 		Das Handgelenk sowie die Hand bestehen im Wesentlichen aus gekauften Teilen.
 		Dabei wird das Handgelenk so ausgelegt, dass es sowohl mit einer Klemme mit einer Kugelform als Anschluss ausgestattet werden kann als auch mit einer Schraube der Größe M5 befestigt werden kann.
 		Dabei ist lediglich zu beachten, dass die Kugelform mit einem Durchmesser von 28 mm ausgeführt ist.
 		Die Klemme bzw. Hand sollte des Weiteren breit genug ausgearbeitet sein, um dem Queue auch eine entsprechende seitliche und vertikale Stabilisation zu ermöglichen.
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=\textwidth]{Abb/CAD/Renderings/hand.jpg}
+			\caption[Gerenderte Darstellung der Hand]{Gerenderte Darstellung der Hand.}%
+			\label{fig:rendering hand}
+		\end{figure}
 	
 	\section{Künstliche Muskeln}
-		Die künstlichen Muskeln, die den Bizeps und Trizeps abbilden, sind Kernkomponenten der Konstruktion. 
-		Insbesondere der Bizeps ist für die Aufwendung der Kraft für einen Stoß verantwortlich. 
+		Die künstlichen Muskeln, die den Bizeps und Trizeps abbilden, sind Kernkomponenten der Konstruktion.
+		Insbesondere der Bizeps ist für die Aufwendung der Kraft für einen Stoß verantwortlich.
 		Der Trizeps dient hingegen zum Ausholen des Arms.
 		Damit bilden diese beiden Muskeln die meiste Bewegung des Armes ab.
-		Sie sind als künstliche Muskeln ausgelegt, da sie die Muskeln des menschlichen Körpers am besten nachbilden. 
-		Außerdem sind sie für Anwendungen dieser Art der aktuelle Stand der Technik. 
-		Die bieten gegenüber klassischen Pneumatikzylindern die Vorteile, dass sie geringe nicht axiale Bewegungen zulassen können. 
-		Außerdem sind sie gegenüber Staub, Schmutz und Flüssigkeiten unempfindlicher sind. 
-		Des Weiteren bieten sie bei vergleichsweise geringerer Masse eine gleiche oder sogar höhere Kraft.  
+		Sie sind als künstliche Muskeln ausgelegt, da sie die Muskeln des menschlichen Körpers am besten nachbilden.
+		Außerdem sind sie für Anwendungen dieser Art der aktuelle Stand der Technik.
+		Die bieten gegenüber klassischen Pneumatikzylindern die Vorteile, dass sie geringe nicht axiale Bewegungen zulassen können.
+		Außerdem sind sie gegenüber Staub, Schmutz und Flüssigkeiten unempfindlicher sind.
+		Des Weiteren bieten sie bei vergleichsweise geringerer Masse eine gleiche oder sogar höhere Kraft.
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=\textwidth]{Abb/CAD/Renderings/sehnen_und_schelle.jpg}
+			\caption[Gerenderte Darstellung der Sehnen und Sattelklemme]{Gerenderte Darstellung der Sehnen am Oberarm und der Klemme zur Fixierung der beiden Rohre.}%
+			\label{fig:rendering sehnen und schellen}
+		\end{figure}
+
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=\textwidth]{Abb/CAD/Renderings/bizeps.jpg}
+			\caption[Nahaufnahme des Bizeps bildenden pneumatischen Aktuators]{Nahaufnahme des Bizeps bildenden pneumatischen Aktuators.}%
+			\label{fig:rendering bizeps}
+		\end{figure}
