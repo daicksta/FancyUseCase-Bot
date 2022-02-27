@@ -100,7 +100,7 @@
 
 		Das erste Teilproblem der Schulter stellte die Befestigung dieser und damit der gesamten Baugruppe an dem bereitgestellten Dummy dar. Allerdings ist der einzige Kontaktpunkt des Dummys eine Schraube mit dem Gewinde M10 $\times$ 1. Diese Lösung ist also von den Gegebenheiten vorgegeben.\par\medskip
 
-		Um einen typischen Billardstoß nachbilden zu können, muss sich außerdem die Schulter bewegen können, da der Arm eines Billardspielers meistens einen Winkel von \SI{90}{\degree} gegenüber der Senkrechten bildet. Da dieser Winkel jedoch von Spieler zu Spieler unterschiedlich ist, musste die Schulter beweglich ausgeführt werden. Um die Bewegung der Schulter umzusetzen, wurde ein spherical gear gewählt, da dies neben der eigentlichen Bewegung auch die Lagerung der Schulter als auch die Fixierung, während eines Stoßes sicherstellt, indem die Getriebeübersetzung entsprechend hoch gewählt wird. Da mit dieser Lösung mehrere Probleme auf einmal gelöst werden können und sie einen relativ kleinen Bauraum einnimmt, wurde diese Variante ausgewählt. Dabei wird allerdings die Bewegung der Schulter auf eine 2D-Ebene beschränkt, was aber für die Nachbildung eines Arms beim Billardspielen keinen Nachteil mit sich bringt (vgl. \cref{tab:morphologische-kasten-schulter}).\par\medskip
+		Um einen typischen Billardstoß nachbilden zu können, muss sich außerdem die Schulter bewegen können, da der Arm eines Billardspielers meistens einen Winkel von \SI{90}{\degree} gegenüber der Senkrechten bildet. Da dieser Winkel jedoch von Spieler zu Spieler unterschiedlich ist, musste die Schulter beweglich ausgeführt werden. Um die Bewegung der Schulter umzusetzen, wurde ein Zykloidalgetriebe gewählt, da dies neben der eigentlichen Bewegung auch die Lagerung der Schulter als auch die Fixierung, während eines Stoßes sicherstellt, indem die Getriebeübersetzung entsprechend hoch gewählt wird. Da mit dieser Lösung mehrere Probleme auf einmal gelöst werden können und sie einen relativ kleinen Bauraum einnimmt, wurde diese Variante ausgewählt. Dabei wird allerdings die Bewegung der Schulter auf eine 2D-Ebene beschränkt, was aber für die Nachbildung eines Arms beim Billardspielen keinen Nachteil mit sich bringt (vgl. \cref{tab:morphologische-kasten-schulter}).\par\medskip
 
 		Außerdem muss eine Bewegung am Ellbogen erzeugt werden, da damit die meisten Billardspieler ihren Stoß ausführen. Dabei gab es zwei Probleme zu lösen: Zum einen die Bewegung und zum anderen die Befestigung des Unterarms am Oberarm. Zur Bewegung des Unterarms wurden künstliche Muskeln gewählt. Sie sind flexibel und bilden die menschliche Anatomie sehr genau nach. Um die Bewegung des Arms zu ermöglichen, wurde ein gewöhnliches Scharnier gewählt, da auch dies den Konstruktionsaufwand gering hält und hinzugekauft werden kann (vgl. \cref{tab:morphologische-kasten-ellbogen}).\par\medskip
 
@@ -138,7 +138,7 @@
 		Da mit nicht-idealen Steifigkeiten der Teilsysteme zu rechnen ist und um Abweichungen durch dynamisches Verhalten im Betrieb auffangen zu können wird ein Untersetzuingsverhältnis
 		Die verfahrbare Mindestbahnlänge \(\Delta s_{arc}\) skaliert umgekehrt proportional mit dem Untersetzungsverhältnis \(N\) aus \cref{eq:untersetzung} gemäß
 		\begin{equation}
-			\Delta s_{arc} 	&= \frac{1}{N} \cdot \frac{\SI{1,8}{\degree}}{\SI{180}{\degree}} \cdot \pi \cdot l_{eff}
+			\Delta s_{arc} = \frac{1}{N} \cdot \frac{\SI{1,8}{\degree}}{\SI{180}{\degree}} \cdot \pi \cdot l_{eff}
 		\end{equation}
 
 		\begin{figure}[h]
