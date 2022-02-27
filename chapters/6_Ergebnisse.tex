@@ -6,13 +6,11 @@
 		Nun werden die zur Konstruktion konzipierten Bauteile allesamt mit Zeichnungen präsentiert und kommentiert.
 		Dabei wird unter anderem sowohl auf das Prozedere der Konstruktion als auch auf die aufgetauchten Probleme und die Vorgehensweise zur Lösung jener eingegangen.\\
 		Die technischen Zeichnungen zu den Bauteilen sind jeweils in \cref{sec:zeichnungen} angehängt.
-		Die Übersichtszeichnungen sind meist explosionsartige Darstellungsformen und enthalten Nummerierungen, die dann jeweils in der darauffolgenden Stückliste manifestiert sind.\\
-		Die Zeichnungen zu dem Gesamtbauteil befinden sich in \cref{sec:bauteilzeichnungen}, die des Schultergelenks in \cref{sec:einzelteilzeichnungen schultergelenk}, die Einzelteile des Ober-/Unterarms in \Cref{sec:einzelteilzeichnungen arme} und die des Ellbogengelenks in \cref{sec:einzelteilzeichnungen ellbogengelenk}.
-		Zudem befinden sich in \cref{sec:stueckliste und pneumatikschaltplan} weitere sonstige Stücklisten und außerdem der Schaltplan für die Pneumatik.
+		Die Übersichtszeichnungen sind meist explosionsartige Darstellungsformen und enthalten Nummerierungen, die dann jeweils in der darauffolgenden Stückliste manifestiert sind.
 		
 	\section{Gesamtbauteil}
 		Wie vorhin bereits erwähnt, sind die Zeichnungen des Gesamtbauteils im \cref{sec:bauteilzeichnungen} angehängt.
-		Diese zeigen das fertige Konstrukt als Ganzes und auseinander geschraubt.
+		Diese zeigen das fertige Konstrukt als Ganzes und als Bauteilexplosionszeichnung.
 		Die Maße und Dimensionierungen der Einzelteile sind den Zeichnungen der jeweils zugehörigen Unterkapiteln zu entnehmen.\\
 		Allgemein ist zu sagen, dass die Bauteile so konstruiert werden mussten, dass sie einander angepasst sind.
 		Dabei spielen die Verbindungen zwischen den einzelnen Gliedern eine entscheidende Rolle.
@@ -21,15 +19,17 @@
 	\section{Schulter}
 		Die Schulter hat die Aufgabe sowohl den gesamten Arm am Dummy zu befestigen als auch die Bewegung des Arms zu initialisieren.
 		Für diese Aufgabe wurde das Zykloidalgetriebe gewählt und konstruiert.
-		Das Zykloidalgetriebe ist ein mechanisches Getriebe, das die Umdrehungen reduziert, indem es die exzentrische Bewegung des Zykloidenrads einstellt, welches die Ausgangswelle antreibt. Es besitzt ein hohes Übersetzungsverhältnis und ist somit gut geeignet für unsere Anwendung.
-		Das Schultergelenk ist ebenfalls in \cref{sec:bauteilzeichnungen} und weitere Einzelheiten in \cref{sec:einzelteilzeichnungen schultergelenk} zu betrachten.
+		Das Zykloidalgetriebe ist ein mechanisches Getriebe, das die Umdrehungen reduziert, indem der Motor eine Scheibe zum Rotieren bringt und diese in einem äußeren Zahnkranz läuft und das Ausgangsbauteil schrittweise weiter rotiert.
+		Diese Konstruktion bietet den Vorteil, dass durch eine von außen einwirkende Kraft auf den Arm, zum Beispiel beim Stoßen der Kugel, der Arm nicht am Schultergelenk bewegt wird.
+		Außerdem lassen sich dadurch schnelle Bewegungen des Motors in kleine definierte Winkeländerungen des Oberarms übersetzen.
+		Ein weiterer Vorteil besteht darin, dass sich die Achse der Motorwelle und die Achse des Ausgangs auf einer gemeinsamen Rotationsachse befinden.
+
 	
 	\section{Ellbogen}
 		Der Ellbogen fungiert als Verbindung von Ober- und Unterarm und als Halterung- bzw. Stützpunkt des Trizeps.
-		Er ist unter \cref{sec:bauteilzeichnungen} genauer anzusehen.
 		Das Ellbogengelenk ist mit gekauften und gedruckten Teilen erstellt.
 		Dabei werden alle Teile, die käuflich erworben werden können, auch zugekauft.
-		Die selbst konstruierten Einzelteile wie das Rohrteil ist in \cref{sec:einzelteilzeichnungen ellbogengelenk} zu sehen.
+		Dies spart kosten bei der Konstruktion und hält den Konstruktionsaufwand geringer.
 	
 	\section{Ober-/Unterarm}
 		Die Konstruktion des Ober- und Unterarms wurde zunächst an den Prinzipskizzen orientiert erstellt.
@@ -43,16 +43,20 @@
 		So lassen sich zum Beispiel die Klemmen, die die Rohrteile miteinander verbinden, als gewöhnliche Fahrradklemmen ausführen.
 		Auch die Anschlüsse der künstlichen Muskeln können als 3D-gedruckte Teile ausgearbeitet werden und mit einer einfachen Rohrschelle an die Arme befestigt werden.
 		Spezielle Teile wie die Einsätze der Rohre wurden eigenständig konstruiert.\\
-		Der Ober- und Unterarm als Ganzes ist in \cref{sec:bauteilzeichnungen} zu sehen und die Einzelteile wie die Innen- und Außenrohre sind in \cref{sec:einzelteilzeichnungen arme} zu betrachten.
-	
+
 	\section{Hand}
-		Das Handgelenk sowie die Hand (abgebildet in \cref{sec:bauteilzeichnungen}) bestehen im Wesentlichen aus gekauften Teilen.
+		Das Handgelenk sowie die Hand bestehen im Wesentlichen aus gekauften Teilen.
 		Dabei wird das Handgelenk so ausgelegt, dass es sowohl mit einer Klemme mit einer Kugelform als Anschluss ausgestattet werden kann als auch mit einer Schraube der Größe M5 befestigt werden kann.
 		Dabei ist lediglich zu beachten, dass die Kugelform mit einem Durchmesser von 28 mm ausgeführt ist.
 		Die Klemme bzw. Hand sollte des Weiteren breit genug ausgearbeitet sein, um dem Queue auch eine entsprechende seitliche und vertikale Stabilisation zu ermöglichen.
 	
 	\section{Künstliche Muskeln}
-		Die künstlichen Muskeln bilden hauptsächlich der Bizeps und der Trizeps, welche ebenso in \cref{sec:bauteilzeichnungen} zu sehen sind.
-		Beide sind jeweils mit einem Ende am Oberarm und mit dem anderen Ende am Unterarm verbunden.
-		Die Muskeln funktionieren durch pneumatischen Antrieb.
-		Diese Pneumatik verlangt eine Verschaltung, wie sie in \cref{sec:stueckliste und pneumatikschaltplan} schematisch dargestellt ist.
+		Die künstlichen Muskeln, die den Bizeps und Trizeps abbilden, sind Kernkomponenten der Konstruktion. 
+		Insbesondere der Bizeps ist für die Aufwendung der Kraft für einen Stoß verantwortlich. 
+		Der Trizeps dient hingegen zum Ausholen des Arms.
+		Damit bilden diese beiden Muskeln die meiste Bewegung des Armes ab.
+		Sie sind als künstliche Muskeln ausgelegt, da sie die Muskeln des menschlichen Körpers am besten nachbilden. 
+		Außerdem sind sie für Anwendungen dieser Art der aktuelle Stand der Technik. 
+		Die bieten gegenüber klassischen Pneumatikzylindern die Vorteile, dass sie geringe nicht axiale Bewegungen zulassen können. 
+		Außerdem sind sie gegenüber Staub, Schmutz und Flüssigkeiten unempfindlicher sind. 
+		Des Weiteren bieten sie bei vergleichsweise geringerer Masse eine gleiche oder sogar höhere Kraft.  
