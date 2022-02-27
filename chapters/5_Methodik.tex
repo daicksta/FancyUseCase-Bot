@@ -132,28 +132,29 @@
 		Nach \cite{Soll.1982} entfallen anteilig des Gesamtkörpergewichtes etwa \SI{3}{\percent} auf den Oberarm und \SI{2}{\percent} auf den Unterarm.
 		Mit einem angenommenen Gesamtkörpergewicht von \SI{80}{\kilo\gram} entspricht das einem Massenanteil von \SI{2,4}{\kilo\gram} auf den Oberarm und \SI{1,6}{\kilo\gram} auf den Unterarm.
 		Hier soll von einer homogenen Massenverteilung ausgegangen werden, womit die jeweiligen Massenschwerpunkte mittig auf der Verbindungslinie zwischen den Gelenken liegt.
-		Weiter wird von jeweiligen Längen für Ober- und Unterarm von \SI{0,35}{\metre} ausgegangen .\par
-		Soll beim Stoß der Oberarm horizontal und der Unterarm orthogonal nach unten gerichtet sein, so befindet sich das Gesamtgewicht des Systems mit \SI{4}{\kilo\gram} entlang der Oberarmachse nach \cref{eq:massenschwerpunkt arme} bei \SI{0,245}{\metre}.
+		Weiter wird von jeweiligen Längen für Ober- und Unterarm von \SI{0,35}{\metre} und einer Masse \(m_q\) am Ende des Unterarms von \SI{0,5}{\kilo\gram} ausgegangen.\par
+		Soll beim Stoß der Oberarm horizontal und der Unterarm orthogonal nach unten gerichtet sein, so befindet sich das Gesamtgewicht des Systems mit \SI{4}{\kilo\gram} entlang der Oberarmachse nach \cref{eq:massenschwerpunkt arme} bei \SI{0,257}{\metre}.
 
 		\begin{align}
-			x_s &= \frac{x_o \cdot m_o + x_u \cdot m_u}{m_o + m_u} \nonumber \\
-				&= \frac{\SI{0,175}{\metre} \cdot \SI{2,4}{\kilo\gram} + \SI{0,35}{\metre} \cdot \SI{1,6}{\kilo\gram}}{\SI{4}{\kilo\gram}} \nonumber \\
-				&= \SI{0,245}{\metre}%
+			x_s &= \frac{\frac{1}{2}l_o \cdot m_o + l_o \cdot \left(m_u + m_q\right)}{m_o + m_u + m_q} \nonumber \\
+				&= \frac{\SI{0,175}{\metre} \cdot \SI{2,4}{\kilo\gram} + \SI{0,35}{\metre} \cdot \left(\SI{1,6}{\kilo\gram} + \SI{0,5}{\kilo\gram}\right)}{\SI{4,5}{\kilo\gram}} \nonumber \\
+				&\approx \SI{0,257}{\metre}%
 				\label{eq:massenschwerpunkt arme}
 		\end{align}
 
-
+		Um eine stabile Orientierung des Oberarms um das Schultergelenk gewährleisten zu können muss so ein Drehmoment von mindestens \(M_m = x_s \cdot \left(m_o + m_u + m_q\right) = \SI{1,157}{\newton\metre}\) erzeugt werden können.
+		Vergleich mit den Kenndaten eines Schrittmotors der Baugröße Nema 23 \cite{nanotec.specs} kann hier im Vollschrittbetrieb ein Haltemoment von \SI{2,95}{\newton\metre}
 		% Handelsübliche Schrittmotoren besitzen eine Schrittweite bzw. Winkelauflösung von \SI{1,8}{\degree}.
 		% Wenn eine 
 	% In diesem Abschnitt werden die benötigte Kraft der Muskeln sowie die Form des Getriebes berechnet und beschrieben.
 	\section{Auslegung der künstlichen Muskeln}
 		Es erfolgt die Berechnung der benötigten Kraft, die der Bizeps aufbringen muss, um die Kugel mit der entsprechenden Geschwindigkeit stoßen zu können. 
-		Dazu wurde in eigener Recherche ermittelt, dass die maximalen Geschwindigkeiten \(v_{Kugel}\) einer Billiradkugel bei ungefähr \SI{40}{\kilo\metre\per\hour}, also \SI{11,1}{\metre\per\second}, liegt. 
+		Dazu wurde in eigener Recherche ermittelt, dass die maximalen Geschwindigkeiten \(v_{Kugel}\) einer Billiradkugel bei ungefähr \SI{40}{\kilo\metre\per\hour}, also \SI{11,1}{\metre\per\second}, liegt.
 		Die Gewichte der Kugeln wurde aus der Aufgabenstellung entnommen, dabei wurde die größte Masse angenommen, um alle Arten an Kugeln mindestens mit einer Geschwindigkeit von \SI{11,1}{\metre\per\second} bewegen zu können.
 		Diese Masse beträgt \(m_{Kugel}\) = \SI{204}{\gram}.
 		Die Masse des Arms \(m_{Arm}\) wurde mithilfe des CAD-Programms \textsc{Solidworks} ermittelt. Sie liegt bei \SI{1,1}{\kilo\gram}.
 		Wichtig dabei ist, dass es sich lediglich um die Masse handelt, die bei einem Stoß bewegt wird. 
-		Mit diesen Angaben lässt sich nun nach \cref*{eq:SollgeschwindikeitArm} die Geschwindigkeit, mit der der Arm bewegt werden muss ermitteln. 
+		Mit diesen Angaben lässt sich nun nach \cref{eq:SollgeschwindikeitArm} die Geschwindigkeit, mit der der Arm bewegt werden muss ermitteln. 
 
 		\begin{equation}
 			v= \frac{\SI{0,204}{\kilogram} \cdot \SI{11,1}{\metre\per\second}}{\SI{1,105}{\kilogram}} = \SI{2,05}{\metre\per\second}
