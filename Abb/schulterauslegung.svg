@@ -160,7 +160,7 @@
          id="tspan5147"
          style="font-size:3.52778px;stroke-width:0.264583"
          x="28.980938"
-         y="29.452721">m_o</tspan></text>
+         y="29.452721">\(m_o\)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.52778px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
@@ -171,7 +171,7 @@
          id="tspan5147-5"
          style="font-size:3.52778px;stroke-width:0.264583"
          x="44.853302"
-         y="55.399235">m_u</tspan></text>
+         y="55.399235">\(m_u\)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.52778px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
@@ -182,7 +182,7 @@
          id="tspan9494"
          style="font-size:3.52778px;stroke-width:0.264583"
          x="27.767782"
-         y="43.269215">l_o</tspan></text>
+         y="43.269215">\(l_o\)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.52778px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
@@ -193,7 +193,7 @@
          id="tspan9494-6"
          style="font-size:3.52778px;stroke-width:0.264583"
          x="54.347916"
-         y="48.53307">l_u</tspan></text>
+         y="48.53307">\(l_u\)</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:3.52778px;line-height:1.25;font-family:Bahnschrift;-inkscape-font-specification:Bahnschrift;letter-spacing:0px;word-spacing:0px;stroke-width:0.264583"
@@ -204,6 +204,6 @@
          id="tspan12307"
          style="font-size:3.52778px;stroke-width:0.264583"
          x="9.1660643"
-         y="21.230223">M_m</tspan></text>
+         y="21.230223">\(M_m\)</tspan></text>
   </g>
 </svg>
