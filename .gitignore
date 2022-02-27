@@ -16,6 +16,7 @@ chapters/old/6_chap.tex
 .vscode/ltex.dictionary.de-DE.txt
 *.fls
 *.synctex.gz
+*.synctex*
 *.aux
 *.bbl
 *.bcf
