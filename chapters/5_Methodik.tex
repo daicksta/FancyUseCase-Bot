@@ -135,12 +135,12 @@
 							&= \SI{1,56}{\cm}
 		\end{align}
 		Hier sei \(l_{eff}\), wie in \cref{fig:schultergelenk winkelaufloesung} dargestellt, die Hypotenuse des durch Ober- und Unterarm aufgespannten Dreieckes.\par
-		Da mit nicht-idealen Steifigkeiten der Teilsysteme zu rechnen ist und um Abweichungen durch dynamisches Verhalten im Betrieb auffangen zu können wird ein Untersetzuingsverhältnis
+		Da mit nicht-idealen Steifigkeiten der Teilsysteme zu rechnen ist und um Abweichungen durch dynamisches Verhalten im Betrieb auffangen zu können wird eine Untersetzung von \(N = 30\) gewählt.
 		Die verfahrbare Mindestbahnlänge \(\Delta s_{arc}\) skaliert umgekehrt proportional mit dem Untersetzungsverhältnis \(N\) aus \cref{eq:untersetzung} gemäß
 		\begin{equation}
-			\Delta s_{arc} 	&= \frac{1}{N} \cdot \frac{\SI{1,8}{\degree}}{\SI{180}{\degree}} \cdot \pi \cdot l_{eff}
+			\Delta s_{arc} = \frac{1}{N} \cdot \frac{\SI{1,8}{\degree}}{\SI{180}{\degree}} \cdot \pi \cdot l_{eff}
 		\end{equation}
-
+		und ergibt sich so für den Fall das gilt \(l_o \perp l_u\) zu \SI{0,5}{\mm}.
 		\begin{figure}[h]
 			\centering
 			\includesvg[inkscapelatex=true, width=.6\textwidth]{Abb/schulterauslegung-winkelaufloesung}
@@ -164,7 +164,7 @@
 		Zur Ermittlung der Kraft wird die \cref{eq:Kraft-PAM} verwendet. 
 
 		\begin{equation}
-			F =\frac{\SI{1,105}{\kilogram} \cdot \SI{17867,67}{\milli\metre\squared} \cdot \SI{420}{\metre\per\second\squared}}{\SI{304,29}{\milli\metre} \cdot \SI{136,35}{\milli\metre} \cdot \cos{\SI{46,38}{\degree}}} = \SI{289,72}{\newton}
+			F =\frac{\SI{1,105}{\kilogram} \cdot \SI{17867,67}{\milli\metre\squared} \cdot \SI{420}{\metre\per\second\squared}}{\SI{304,29}{\milli\metre} \cdot \SI{136,35}{\milli\metre} \cdot \cos{\left(\SI{46,38}{\degree}\right)}} = \SI{289,72}{\newton}
 		\end{equation}
 		mit \(a_T\)
 		\begin{equation}
