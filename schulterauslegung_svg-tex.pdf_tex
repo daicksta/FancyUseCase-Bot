@@ -38,7 +38,7 @@
   \newcommand*\fsize{\dimexpr\f@size pt\relax}%
   \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
   \ifx\svgwidth\undefined%
-    \setlength{\unitlength}{158.00801117bp}%
+    \setlength{\unitlength}{172.21700554bp}%
     \ifx\svgscale\undefined%
       \relax%
     \else%
@@ -50,14 +50,14 @@
   \global\let\svgwidth\undefined%
   \global\let\svgscale\undefined%
   \makeatother%
-  \begin{picture}(1,0.85547011)%
+  \begin{picture}(1,0.78976507)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
     \put(0,0){\includegraphics[width=\unitlength,page=1]{schulterauslegung_svg-tex.pdf}}%
-    \put(0.46846695,0.66302745){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}m_o\end{tabular}}}}%
-    \put(0.75321535,0.19754995){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}m_u\end{tabular}}}}%
-    \put(0.44670308,0.41516113){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}l_o\end{tabular}}}}%
-    \put(0.92354764,0.32072817){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}l_u\end{tabular}}}}%
-    \put(0.11299038,0.81053813){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}M_m\end{tabular}}}}%
+    \put(0.42981546,0.60832349){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\(m_o\)\end{tabular}}}}%
+    \put(0.69107031,0.18125083){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\(m_u\)\end{tabular}}}}%
+    \put(0.40984724,0.38090771){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\(l_o\)\end{tabular}}}}%
+    \put(0.8473491,0.29426607){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\(l_u\)\end{tabular}}}}%
+    \put(0.10366796,0.74366359){\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}\(M_m\)\end{tabular}}}}%
   \end{picture}%
 \endgroup%
