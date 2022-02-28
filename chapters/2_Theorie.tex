@@ -1,75 +1,21 @@
 % Im Theorieteil ist der aktuelle Stand der Technik/Forschung wertungsfrei darzustellen. Er dient dazu, den wissenschaftlichen Kontext für die Aufgabenstellung herauszuarbeiten. Dementsprechend sollte die Darstellungsweise nicht zu allgemein gewählt werden, sondern nur die für die Aufgabenstellung relevanten Theorien und notwendigen Definitionen dargelegt werden. Stehen mehrere Theorien zur Verfügung, ist ein Überblick zu geben. Definitionen sind nur dann notwendig, wenn sie nicht ohnehin als allgemein, d.h. von Vertreter des Fachbereichs, bekannt vorausgesetzt werden können und für den weiteren Verlauf der Arbeit relevant sind. Die Theorie hat einen entscheidenden Einfluss auf die Methodenwahl und die Interpretation der Ergebnisse. Der Stand der Technik ist u.a. dokumentiert in Monografien, Vortragsmanuskripten, Patenten und in besonderer Weise in Artikeln wissenschaftlicher Zeitschriften. Diese Quellen Seite 5 sind zu nutzen. Es wird eine Analyse von mindestens vier Zeitschriftenartikeln erwartet, von denen mindestens einer in englischer Sprache verfasst ist. Bei der Auswahl der Literatur ist auf Aktualität der Arbeiten zu achten.
 \chapter{Theorie}
-	\section{Theorie zur Auslegung der künstlichen Muskeln}
-		Um die Baugruppe an die Bewegungen eines Billiardspielers anzupassen, müssen die Bauteile entsprechend ausgelegt werden. 
-		Dazu zählt unter anderem die Auslegung der Kraft der künstlichen Muskeln. 
-		Um dies richtig erfassen zu können wurde ein schematischer Aufbau des Arms angenommen und daran die Berechnungen ausgeführt. 
-		Zunächst allerdings wird der Impuls, den der Billiardqueue auf die Spielkugel überträgt betrachtet. 
-		Dabei gilt, dass die beiden Impulse bei unterschiedlicher Masse und Geschwindigkeiten identisch sind. 
+		Um einschätzen zu können mit welchen Größenordnungen man es zu tun hat, wird zunächst die Geschwindigkeit berechnet, die beim Ausführen eines typischen Stoßes von einem Billardspieler erreicht wird.
+		Da dazu keine Literaturwerte zu typischen Stoßgeschwindigkeiten zu finden waren, kann nach Auswertung verschiedener Videoaufzeichnungen und Sichtung einschlägiger Foren mit guter Sicherheit von einer durchschnittlichen Geschwindigkeit der Kugel von \SI{40}{\kilo\metre\per\hour} bzw. \SI{11,1}{\metre\per\second} ausgegangen werden. 
+		Betrachtet man nun die Impulsübertragung ergibt sich, dass der Impuls identisch sein muss. 
+		Für den Impuls gilt die Formel.
+		\begin{equation}
+			p_{Arm} = p_{Kugel}
+			\label{eq:Impuls}
+		\end{equation}
+		Dabei gilt, dass der Impuls mit Masse multipliziert mit der Geschwindigkeit gegeben ist.  
 		\begin{equation}
 			m\cdot v = m_{Kugel} \cdot v_{Kugel}%
 			\label{eq:ImpulsKugel}
 		\end{equation}
 		Dabei ist die Masse des Arms \(m\), die Bewegungsgeschwindigkeit des Arms \(v\), die Masse der Kugel \(m_{Kugel}\) und die Bewegungsgeschwindigkeit der Kugel \(v_{Kugel}\).
-		Damit kann die benötigte Bewegungsgeschwindigkeit an der Hand des Armes berechnet werden.
+		Damit kann die Bewegungsgeschwindigkeit an der Hand des Armes berechnet werden.
 		\begin{equation}
 			v = \frac{m_{Kugel} \cdot v_{Kugel}}{m}%
 			\label{eq:SollgeschwindikeitArm}
 		\end{equation}
-
-		Die kann dann dazu genutzt werden die erforderliche Kraft der pneumatischen Muskeln zu berechnen. \par
-		Nun wird über das Drehmoment die benötigte Kraft der künstlichen Muskeln oder auch PAMs berechnet. 
-
-
-
-		\begin{equation}
-			M = b \cdot F_x = I \cdot \alpha%
-			\label{eq:DrehmomentArm}
-		\end{equation}
-
-		mit dem Trägheitsmoment \( I = m \cdot s_m^2 \), der Tangentialbeschleunigung \( a_T = \frac{v^2}{\Delta x} \) und der
-		Winkelbeschleunigung \( \alpha = \frac{a_T}{B} \) \par\medskip
-
-		\begin{align}
-			I \cdot \frac{a_T}{B} &= m \cdot s_m^2 \cdot \frac{a_T}{B} \nonumber\\
-			b \cdot F &= m \cdot s_m^2 \cdot \frac{a_T}{B} \nonumber\\
-			F &=\frac{m \cdot {s_m}^2 \cdot a_T}{B \cdot b \cdot cos(\beta)}%
-			\label{eq:Kraft-PAM}
-		\end{align}
-
-		Eine Skizze zur Veranschaulichung, sowie die Beschreibungen der Variablen befinden sich auf der nächsten Seite. 
-
-		\newpage
-		\begin{figure}[h]
-			\centering
-			\includegraphics[width=.5\textwidth]{Abb/SkizzeBerechnungen.jpeg}
-			\caption{Skizze Berechnungen.}%
-			\label{fig:SkizzeBerechnungen}
-		\end{figure}
-
-		Hier sind
-
-		\( m := \) Masse Unterarm \\
-		\( s_m := \) Massenschwerpunkt entlang $ B $ \\
-		\( v := \) Soll-Endgeschwindigkeit \\
-		\( \Delta x := \) Ausholstrecke vor dem Stoß \\
-		\( B := \) Strecke Drehachse - Ende des Unterarms \\
-		\( b:= \) Strecke Drehachse - Angriffspunkt PAM \\
-		\( \beta := \) Winkel PAM  Oberarm \\
-		\( F:= \) Erforderliche Kraft des PAM
-
-	\section{Theorie zur Auslegung des Schultergetriebes}
-		Um den Queue korrekt anlegen zu können ist es erforderlich, dass sämtliche Unterbaugruppen vor, während und nach eines Stoßes in der eingestellten Ausrichtung verharren.
-		Weiter muss die angestrebte Position an der Kugel, sowie der Stoßwinkel in ausreichender Präzision sicher angefahren werden können.
-		Diese Aufgabe muss primär vom Schultergelenk geleistet werden, welches wie oben beschrieben mit einem Zykloidalgetriebe \cite{Lee.2020} \cite{Jang.2021} als Kernkomponente umgesetzt werden soll.
-		Die Untersetzung \(N\) eines Zykloidalgetriebes lässt sich allgemein durch \cref{eq:untersetzung} darstellen.
-
-		\begin{equation}
-			N = -\frac{Z_2}{Z_1 - Z_2}%
-			\label{eq:untersetzung}
-		\end{equation}
-
-		Hier seien \(Z_1\) die Anzahl der Zähne der inneren Scheibe und \(Z_2\) die Anzahl der Zähne des einschließenden, äußeren Ringes.
-		Aus der Geometrie geht zwingend hervor, dass \(Z_1 < Z_2\) gilt.
-		Weiter kann mit dem Zusammenhang \(Z_2 - Z_1 = 1\) das Verhältnis von Untersetzungsvermögen zu räumlichen Volumen maximiert werden.
-		Mit diesen Randbedingungen wird \cref{eq:untersetzung} zu \(N = Z_2\) und das Untersetzungsvermögen lässt sich somit unmittelbar an der Anzahl der Zähne des äußeren Ringes ablesen.
