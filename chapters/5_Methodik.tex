@@ -104,11 +104,11 @@ Sie enthält die gängigen Methoden zur Konstruktion von Bauteilen, wie zum Beis
 
 		Außerdem muss eine Bewegung am Ellbogen erzeugt werden, da damit die meisten Billardspieler ihren Stoß ausführen. Dabei gab es zwei Probleme zu lösen: Zum einen die Bewegung und zum anderen die Befestigung des Unterarms am Oberarm. Zur Bewegung des Unterarms wurden künstliche Muskeln gewählt. Sie sind flexibel und bilden die menschliche Anatomie sehr genau nach. Um die Bewegung des Arms zu ermöglichen, wurde ein gewöhnliches Scharnier gewählt, da auch dies den Konstruktionsaufwand gering hält und hinzugekauft werden kann (vgl. \cref{tab:morphologische-kasten-ellbogen}).\par\medskip
 
-		Als letztes Problem wird das Handgelenk betrachtet. Dieses muss sich einerseits bewegen und andererseits am Unterarm befestigt werden. Da vom Handgelenk aber bei einer Lagerung des Queues keine eigene Bewegung erforderlich ist wurde die Hand so aufgelegt, dass sie nicht maschinell bewegt werden kann. Als Fixierung und Lagerung wurde am Handgelenk ein 3D-Kugelkopf gewählt, da damit eine genauere Positionierung des Queues möglich ist. So kann er auch in einem Winkel zum Arm ausgerichtet werden und bietet mehr Flexibilität bei der Nachstellung von Stößen (vgl. \cref{tab:morphologische-kasten-handgelenk}).
+		Als letztes Problem wird das Handgelenk betrachtet. Dieses muss sich einerseits bewegen und andererseits am Unterarm befestigt werden. Da vom Handgelenk aber bei einer Lagerung des Queues keine eigene Bewegung erforderlich ist, wurde die Hand so aufgelegt, dass sie nicht maschinell bewegt werden kann. Als Fixierung und Lagerung wurde am Handgelenk ein 3D-Kugelkopf gewählt, da damit eine genauere Positionierung des Queues möglich ist. So kann er auch in einem Winkel zum Arm ausgerichtet werden und bietet mehr Flexibilität bei der Nachstellung von Stößen (vgl. \cref{tab:morphologische-kasten-handgelenk}).
 	\section{Auslegung der Schulter}\label{sec:auslegung}
 
-	Um den Queue korrekt anlegen zu können ist es erforderlich, dass sämtliche Unterbaugruppen vor, während und nach eines Stoßes in der eingestellten Ausrichtung verharren.
-	Weiter muss die angestrebte Position an der Kugel, sowie der Stoßwinkel in ausreichender Präzision sicher angefahren werden können.
+	Um den Queue korrekt anlegen zu können, ist es erforderlich, dass sämtliche Unterbaugruppen vor, während und nach eines Stoßes in der eingestellten Ausrichtung verharren.
+	Weiter muss die angestrebte Position an der Kugel sowie der Stoßwinkel in ausreichender Präzision sicher angefahren werden können.
 	Diese Aufgabe muss primär vom Schultergelenk geleistet werden, welches wie oben beschrieben mit einem Zykloidalgetriebe \cite{Lee.2020} \cite{Jang.2021} als Kernkomponente umgesetzt werden soll.
 	Die Untersetzung \(N\) eines Zykloidalgetriebes lässt sich allgemein durch \cref{eq:untersetzung} darstellen.
 
@@ -131,7 +131,7 @@ Sie enthält die gängigen Methoden zur Konstruktion von Bauteilen, wie zum Beis
 		
 		Nach \cite{Soll.1982} entfallen anteilig des Gesamtkörpergewichtes etwa \SI{3}{\percent} auf den Oberarm und \SI{2}{\percent} auf den Unterarm.
 		Mit einem angenommenen Gesamtkörpergewicht von \SI{80}{\kilo\gram} entspricht das einem Massenanteil von \SI{2,4}{\kilo\gram} auf den Oberarm und \SI{1,6}{\kilo\gram} auf den Unterarm.
-		Hier soll von einer homogenen Massenverteilung ausgegangen werden, womit die jeweiligen Massenschwerpunkte mittig auf der Verbindungslinie zwischen den Gelenken liegt.
+		Hier soll von einer homogenen Massenverteilung ausgegangen werden, womit die jeweiligen Massenschwerpunkte mittig auf der Verbindungslinie zwischen den Gelenken liegen.
 		Weiter wird von jeweiligen Längen für Ober- und Unterarm von \SI{0,35}{\metre} und einer Masse \(m_q\) am Ende des Unterarms von \SI{0,5}{\kilo\gram} ausgegangen.\par
 		Soll beim Stoß der Oberarm horizontal und der Unterarm orthogonal nach unten gerichtet sein, so befindet sich das Gesamtgewicht des Systems mit \SI{4}{\kilo\gram} entlang der Oberarmachse nach \cref{eq:massenschwerpunkt arme} bei \SI{0,257}{\metre}.
 
@@ -142,7 +142,7 @@ Sie enthält die gängigen Methoden zur Konstruktion von Bauteilen, wie zum Beis
 				\label{eq:massenschwerpunkt arme}
 		\end{align}
 
-		Um eine stabile Orientierung des Oberarms um das Schultergelenk gewährleisten zu können muss so ein Drehmoment von mindestens \(M_m = x_s \cdot \left(m_o + m_u + m_q\right) = \SI{1,157}{\newton\metre}\) erzeugt werden können.
+		Um eine stabile Orientierung des Oberarms um das Schultergelenk gewährleisten zu können, muss so ein Drehmoment von mindestens \(M_m = x_s \cdot \left(m_o + m_u + m_q\right) = \SI{1,157}{\newton\metre}\) erzeugt werden können.
 		Vergleich mit den Kenndaten eines Schrittmotors der Baugröße Nema 23 \cite{nanotec.specs} kann hier im Vollschrittbetrieb ein Haltemoment von \SI{2,95}{\newton\metre} erwartet werden.\par\medskip
 		Die genannten Winkelauflösung des Schrittmotors von \SI{1,8}{\degree} übersetzt sich an der Position der Hand zu einer Mindestbogenlänge von
 		\begin{align}
@@ -171,14 +171,14 @@ Sie enthält die gängigen Methoden zur Konstruktion von Bauteilen, wie zum Beis
 		Diese Masse beträgt \(m_{Kugel}\) = \SI{204}{\gram}.
 		Die Masse des Arms \(m_{Arm}\) wurde mithilfe des CAD-Programms \textsc{Solidworks} ermittelt. Sie liegt bei \SI{1,1}{\kilo\gram}.
 		Wichtig dabei ist, dass es sich lediglich um die Masse handelt, die bei einem Stoß bewegt wird. 
-		Mit diesen Angaben lässt sich nun nach \cref{eq:SollgeschwindikeitArm} die Geschwindigkeit, mit der der Arm bewegt werden muss ermitteln. 
+		Mit diesen Angaben lässt sich nun nach \cref{eq:SollgeschwindikeitArm} die Geschwindigkeit, mit der der Arm bewegt werden muss, ermitteln. 
 
 		\begin{equation}
 			v= \frac{\SI{0,204}{\kilogram} \cdot \SI{11,1}{\metre\per\second}}{\SI{1,105}{\kilogram}} = \SI{2,05}{\metre\per\second}
 			\label{eq:SollgeschwindikeitArmZahlen}
 		\end{equation}
 
-		Diese kann dann dazu genutzt werden die erforderliche Kraft der pneumatischen Muskeln zu berechnen. \par
+		Diese kann dann dazu genutzt werden, die erforderliche Kraft der pneumatischen Muskeln zu berechnen. \par
 		Nun wird über das Drehmoment die benötigte Kraft der künstlichen Muskeln oder auch PAMs berechnet. 
 
 		\begin{equation}
